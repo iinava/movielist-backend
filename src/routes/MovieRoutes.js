@@ -1,5 +1,5 @@
 import express from 'express';
-import { getAllMovies, getMovieBySlug, Addmovie, updateMovieRatingReview, deleteMovie } from '../controllers/movieController.js';
+import { getAllMovies, getMovieBySlug, Addmovie, UpdateMovie, deleteMovie } from '../controllers/movieController.js';
 
 const router = express.Router();
 
@@ -13,7 +13,7 @@ router.get('/get/:slug', getMovieBySlug);
 router.post('/add', Addmovie);
 
 // PUT update a movie
-router.put('/edit/:slug', updateMovieRatingReview);
+router.put('/edit/:slug',UpdateMovie );
 
 // DELETE a movie
 router.delete('/delete/:slug', deleteMovie);
