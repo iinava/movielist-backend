@@ -17,7 +17,7 @@ model Movie {
   id        String      @id @default(auto()) @map("_id") @db.ObjectId
   image     String
   title     String
-  year      BigInt
+  year      Int
   genre     String
   slug      String   @unique
   review    String?
